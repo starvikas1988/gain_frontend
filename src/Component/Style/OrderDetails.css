@@ -1,0 +1,146 @@
+.order-details-container {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 98px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .header h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 25px;
+  }
+  
+  /* Order status */
+  .order-status h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .order-status p {
+    font-size: 16px;
+    color: gray;
+  }
+  
+  /* Track Order Section */
+  .track-order {
+    margin-top: 20px;
+  }
+  
+  .track-order h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .status-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    background-color: white;
+  }
+  
+  .circle.active {
+    border-color: black;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Order Details Section */
+  .order-details h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .detail-item span {
+    font-size: 16px;
+  }
+  
+  .detail-item span:last-child {
+    font-weight: bold;
+  }
+  /* OrderDetails.css */
+
+.ordered-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .ordered-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ordered-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .ordered-item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ordered-item-details h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ordered-item-details p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .ordered-item-details p:last-child {
+    font-weight: bold;
+    color: #000;
+  }
+  

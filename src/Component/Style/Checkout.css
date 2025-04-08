@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+.profile-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.profile-section {
+    width: 100%;
+}
+
+.checkout-container {
+    width: 75%;
+    margin: auto;
+    padding: 70px 0px;
+}
+
+.checkout-wrapper {
+    width: 50%;
+    border: 1px solid rgb(206, 206, 206);
+    padding: 10px;
+}
+
+.checkout-wrapper h1 {
+    width: 100%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding: 15px 0px;
+}
+
+.checkout-del-pic {
+    display: flex;
+    gap: 17px;
+}
+
+.checkour-btn {
+    border: none;
+    padding: 9px 17px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.checkout-form {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.checkout-form p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 26px;
+}
+
+.checkout-del-timing {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-del-timing-pa {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 27px;
+}
+
+.checkout-input {
+    display: flex;
+    gap: 8px;
+}
+
+.checkout-input label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.cart-total-link1 button {
+    width: 100%;
+    background-color: orangered;
+    border: none;
+    padding: 7px 0px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-top: 17px;
+}
+
+.price-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-coupon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout-coupon input {
+    width: 62%;
+    margin: 0px;
+}
+
+.checkout-coupon button {
+    padding: 12px 7px;
+    border: none;
+    background-color: orange;
+    border-radius: 9px;
+}
+
+.checkout-wal-balance p {
+    font-weight: bold;
+}
+
+.checkout-wal-balance {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.cart-del {
+    width: 100%;
+}
+
+.cart-item-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart-item-header h3 {
+    margin-bottom: 11px;
+}
+
+.price-summery {
+    width: 100%;
+}
+
+.btn-remove {
+    padding: 0px 14px;
+}
+
+.cart-item-header .cart-remove-btn {
+    height: 100%;
+    background-color: orangered;
+    padding: 0px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.checkout-btn-rupees {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 23px;
+}
+
+.order-section-complete {
+    width: 100%;
+    max-width: 486px;
+    padding: 50px;
+    background: #b8b6b6;
+    color: #000000;
+    font-size: 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.order-link-btn {
+    text-decoration: none;
+    background-color: orangered;
+    padding: 6px 0px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: currentColor;
+}
+
+.order-section-complete p {
+    font-weight: 700;
+    color: saddlebrown;
+}
+
+.profile-active {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.Loading-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* @media screen and (max-width : 1038px) {
+    .checkout-wrapper {
+        width: 66%;
+    }
+
+    .cart-header {
+        width: 66%;
+    }
+} */
+
+
+.app-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Tab styling */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Address styling */
+.address-container h3 {
+    margin-bottom: 10px;
+}
+
+.address {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.address p {
+    margin: 5px 0;
+}
+
+/* Styling for the pickup container */
+.pickup-container {
+    margin-bottom: 20px;
+}
+
+.pickup-container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Styling for the time input */
+.time-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+.time-input:focus {
+    outline: none;
+    border-color: #32cd32;
+    /* Green border when focused */
+    background-color: #fff;
+}
+
+.time-input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Optional: Styling for input when invalid */
+.time-input:invalid {
+    border-color: #ff4d4d;
+}
+
+.time-input:invalid:focus {
+    border-color: #ff4d4d;
+    background-color: #ffe6e6;
+}
+
+/* Styles for the Payment Modal */
+.payment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure modal is above other content */
+    animation: fadeIn 0.3s ease-out;
+}
+
+.payment-modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.3s ease-out;
+}
+
+.payment-modal-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-modal-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.pay-now-btn {
+    background-color: #32cd32;
+    /* Green color for the Pay Now button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 16px;
+}
+
+.pay-now-btn:hover {
+    background-color: #28a745;
+    /* Darker green on hover */
+}
+
+.close-btn {
+    background-color: #f44336;
+    /* Red color for Close button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #e53935;
+    /* Darker red on hover */
+}
+
+/* Pickup Time Modal - Overlay */
+.pickup-time-modal1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.pickup-time-modal1 .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.pickup-time-modal1 button {
+    margin: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pickup-time-modal1 button:hover {
+    background-color: darkorange;
+}
+
+/* When modal is open, apply opacity and visibility */
+.pickup-time-modal1.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.time-input1 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+.time-input1 .pickup-time-modal1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .tab {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .address {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .checkout-wrapper {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 985px) {
+    .checkout-coupon1 {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+@media screen and (max-width : 765px) {
+    .checkout-coupon1 input {
+        width: 94%;
+    }
+
+    .checkout-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 660px) {
+    .checkout-wrapper {
+        width: 100%;
+    }
+
+    .cart-header {
+        width: 100%;
+    }
+
+    .cart-item img {
+        margin: 0px;
+    }
+
+    .cart-ruppes-button {
+        margin: 0px;
+    }
+
+    .checkout-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .order-section-complete {
+        padding: 50px 30px;
+    }
+
+    .order-section-complete p {
+        font-weight: 600;
+        text-align: center;
+        font-size: 22px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 440px) {
+    .order-section-complete {
+        padding: 50px 14px;
+    }
+}

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    background-color: rgb(247, 245, 242);
+    position: fixed;
+    z-index: 99;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.navbar-section-container{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-image-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-image-link img {
+    margin-right: 10px;
+}
+
+.navbar-span {
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgb(245, 162, 7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.navbar-location-span {
+    font-weight: bold;
+}
+
+.navbar-input-button {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    gap: 21px;
+}
+.user-profile{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-input-button1 {
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 7px;
+}
+
+.navbar-icon {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    color: orange;
+}
+
+.navbar-input-button1::placeholder {
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.navbar-input-button1:focus {
+    border: 4px solid rgb(239, 164, 24);
+    border-radius: 7px;
+    opacity: 0.4;
+    box-sizing: border-box;
+}
+
+.navbar-input-button button {
+    padding: 12px 30px;
+    background-color: white;
+    border: none;
+    color: orange;
+    margin-left: 10px;
+    font-weight: bolder;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.navbar-input-button2 {
+    margin-right: 5px;
+    position: absolute;
+    right: 69px;
+}
+
+.navbar-menu-icon {
+    display: none;
+}
+
+.nav-icon-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-total {
+    position: absolute;
+    top: -19px;
+    left: 15px;
+    background-color: orangered;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-navbar-input-button .navbar-icon {
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    color: orange;
+}
+
+.mobile-nav-icon-cart .nav-total {
+    position: absolute;
+    top: -17px;
+}
+.navbar-cart-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 26px;
+}
+.navbar-link-cart-total{
+    color: black;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .search-results-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .search-result-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .search-result-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .search-result-item p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .search-result-item span {
+    font-size: 12px;
+    color: gray;
+  }  
+
+
+@media screen and (max-width:1340px) {
+    .main-nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(0%);
+        transition: all 0.6s ease-in-out;
+        overflow: hidden;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        font-size: 28px;
+    }
+    .mobile-main-nav {
+        border-top: 1px solid #b2afaf;
+        position: fixed;
+        top: 3px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        z-index: 9999;
+        transform: translateY(100%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 23px;
+        padding: 18px 0px;
+    }
+
+    .navbar-container {
+        width: 79%;
+        /* padding: 10px 5px; */
+    }
+
+    .mobile-navbar-input-button {
+        display: flex;
+    }
+}
+@media screen and (max-width:650px) {
+    .navbar-cart-menu{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:450px) {
+    .mobile-navbar-location .navbar-location-span1{
+        display: block;
+        margin-top: 13px;
+    }
+    .mobile-navbar-input-button {
+        display: flex;
+        /* flex-direction: column;
+        gap: 15px; */
+    }
+    /* .navbar-input-button2{
+        margin-right: 5px;
+        position: absolute;
+        right: 195px;
+    } */
+    .mobile-navbar-input-button .mobile-food-btn{
+        width: fit-content;
+    }
+    .mobile-nav-icon-cart{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-image-link img {
+        margin-right: 0px;
+    }
+    .mobile-navbar-input-button .navbar-icon {
+        top: 11px;
+        left: 5px;
+    }
+    .navbar-input-button1 {
+        padding: 8px 18px;
+    }
+    .navbar-input-button {
+        gap: 11px;
+    }
+    .navbar-section-container {
+        width: 88%;
+    }
+}
