@@ -68,6 +68,10 @@ const TableWiseProductPage = () => {
       }
     };
 
+    if (tableId) {
+      localStorage.setItem("tableId", tableId);
+    }
+
     fetchCategoriesAndProducts();
   }, [tableId]);
 

@@ -13,13 +13,16 @@ import { deleteAllCart } from "../Redux/Cart-system";
 
 const Checkout = () => {
   const { register, reset, handleSubmit, formState: { isSubmitSuccessful, errors } } = useForm();
+  const tableId = localStorage.getItem("tableId");
 
   const dispatch = useDispatch();
   const { loginData } = useSelector((state) => state.user);
   const [loading, setLoading] = useState(false);
   const { All_cart } = useSelector((state) => state.cart);
   const [order, setOrder] = useState(false);  // Controls the profile-active class
-  const [selectedTab, setSelectedTab] = useState("Delivery");
+ 
+  const [selectedTab, setSelectedTab] = useState(tableId ? "Dine In" : "Delivery");
+
   const [time, setTime] = useState(""); // for time picker in "Dine In"
   const [pickupTime, setPickupTime] = useState(""); // for "Pickup" time option (Within 1hr, 2hr...)
   const [addressData, setAddressData] = useState([]);
@@ -196,6 +199,7 @@ const Checkout = () => {
     } else if (selectedTab === "Dine In") {
       formData.append("orderType", "Dine In");
       formData.append("addressId", "");
+      formData.append("tableId", tableId);
     } else if (selectedTab === "Pickup" && pickupTime) {
       formData.append("orderType", "Pickup");
       formData.append("addressId", "");
@@ -260,6 +264,7 @@ const Checkout = () => {
   
             const paymentObject = new window.Razorpay(options);
             paymentObject.open();
+            localStorage.removeItem("tableId");
           } catch (error) {
             alert("Error creating order. Please try again.");
             console.error(error);

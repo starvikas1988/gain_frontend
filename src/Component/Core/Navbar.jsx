@@ -166,12 +166,12 @@ const Navbar = () => {
             {totalItem > 0 && <div className="nav-total">{totalItem}</div>}
           </Link>
       
-          <button
+          {/* <button
             className="navbar-table-btn"
             onClick={() => setShowTableModal(true)}
           >
             Choose Your Table
-          </button>
+          </button> */}
           {showTableModal && (
           <TableLinksPage onClose={() => setShowTableModal(false)} />
         )}

@@ -47,4 +47,38 @@
     object-fit: cover;
     border-radius: 5px;
   }
+
+  .product-card {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .order-btn, .qty-btn {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
   
