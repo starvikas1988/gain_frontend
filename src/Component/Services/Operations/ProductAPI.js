@@ -33,8 +33,8 @@ const {OrderList_API,ParticularOrder_API} = OrderList_endpoint;
 const {forgetPassward_API} = ForgetPassward_endpoint;
 const {categoryProduct_API} = categoryProduct_endpoint;
 const {search_endpoint_API} = search_endpoint
-//const baseURL= "https://caterer.gainenterprises.in/backend/api/v1";
-const baseURL = "http://localhost:8000/api/v1";
+const baseURL= "https://caterer.gainenterprises.in/backend/api/v1";
+// const baseURL = "http://localhost:8000/api/v1";
 export const fetchProduct = async () => {
   let result = [];
   try {

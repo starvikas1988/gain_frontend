@@ -40,7 +40,7 @@ const Product = () => {
   const [tableId, setTableId] = useState("1");
   // const [restaurantId, setrestaurantId] = useState("5");
   const [popular_qty, setPopular_qty] = useState([]);
-  const [userId, setuserId] = useState("1");
+  const userId = localStorage.getItem("user_id");
 //  const userId = useSelector((state) => state.user.userId);
   console.log("User ID:", userId);
   //console.log("orderState : ", orderState);

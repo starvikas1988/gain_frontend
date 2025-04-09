@@ -1,5 +1,5 @@
-//const baseURL= "https://caterer.gainenterprises.in/backend/api/v1"
-const baseURL = "http://localhost:8000/api/v1";
+const baseURL= "https://caterer.gainenterprises.in/backend/api/v1"
+// const baseURL = "http://localhost:8000/api/v1";
 
 
 //category endpoint

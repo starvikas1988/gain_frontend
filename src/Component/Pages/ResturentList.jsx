@@ -13,6 +13,7 @@ const ResturentList = () => {
     const categoryId = searchParams.get("Id");
     console.log("category id : ", categoryId);
     const { loginData } = useSelector((state) => state.user);
+    const userId = localStorage.getItem("user_id");
     const [restaurant, setRestaurant] = useState([]);
   useEffect(() => {
     const loadProduct = async () => {
@@ -34,7 +35,7 @@ const ResturentList = () => {
   const handleProductClick = (restaurantId) => {
     //console.log("Restaurant :--> ",restaurantId);
     navigate("/product-listing", {
-      state: { categoryId, restaurantId },
+      state: { categoryId, restaurantId,userId },
     });
   };
   

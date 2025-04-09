@@ -67,6 +67,7 @@ const Profile = () => {
     setProfile(false);
     setLogout(true);
     setOrder(false);
+    localStorage.removeItem("user_id");
     setDeliveryAddress(false);
   };
 

@@ -47,7 +47,7 @@
     margin-bottom: 20px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 10px;
-    height: 100px;
+    height: 116px;
     align-items: center;
     justify-content: space-between;
 }
@@ -172,6 +172,8 @@
   .empty-cart a {
     text-decoration: none;
   }
+
+  
 
   @media screen and (max-width : 1050px) {
     .checkout-wrapper {

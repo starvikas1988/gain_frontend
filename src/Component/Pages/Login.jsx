@@ -34,6 +34,7 @@ const Login = () => {
       if (result.success) {
         dispatch(setLoginData(result.data));
         dispatch(setSignupData(result.data));
+        localStorage.setItem("user_id", result.data.user_id);
         toast.success("Login Successfully");
         navigate("/");
       } else {

@@ -42,6 +42,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const { userId } = useSelector((state) => state.user);
+  const users_id = localStorage.getItem("user_id");
 
   const image1 = [
     {
@@ -169,8 +170,9 @@ const Home = () => {
       try {
         const token = loginData.access_token;
         const formData = new FormData();
-        // formData.append("restaurantId", restaurantId);
-        formData.append("productId", product.product_id);
+         formData.append("restaurantId", product.restaurant_id);
+        formData.append("productId", product.id);
+        // formData.append("user_id", users_id);
         formData.append("qty", qty);
 
         const response = await cart_data(formData, token);

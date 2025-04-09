@@ -218,6 +218,7 @@ const Cart = () => {
                       alt={`${item.product.name}`}
                     />
                     <div className="cart-ruppes-button">
+                    <p className="rupees">{item.product.name}</p>
                       <p className="rupees">Price : ₹{item.product.price}</p>
                       <div className="cart-button-in">
                         <button

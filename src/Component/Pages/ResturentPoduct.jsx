@@ -31,6 +31,9 @@ export const ResturentPoduct = () => {
   const { orderState } = useSelector((state) => state.cart);
   const [popular_qty, setPopular_qty] = useState([]);
 
+  const userId = localStorage.getItem("user_id");
+  const tableId = localStorage.getItem("user_id");
+
   const dispatch = useDispatch();
   const navigate=useNavigate();
 
@@ -104,6 +107,7 @@ export const ResturentPoduct = () => {
         try {
           const formData = new FormData();
           formData.append("restaurantId", restaurantId);
+          formData.append("user_id", userId);
           if (selectedCategoryId !== null) {
             formData.append("categoryId", selectedCategoryId);
           }
